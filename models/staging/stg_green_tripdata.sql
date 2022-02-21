@@ -1,4 +1,4 @@
 {{ config(materialized='view') }}
 
-select * from {{ source('source', 'fhv_tripdata') }}
+select * from {{ source('staging','green_trip_data') }}
 limit 100

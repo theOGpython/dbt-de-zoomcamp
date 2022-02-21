@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: staging
+      database: western-cirrus-339817
+      schema: nytaxi
+
+      tables:
+       - name: yellow_trip_data_partitioned_clustered
+       - name: green_trip_data
